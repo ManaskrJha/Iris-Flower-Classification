@@ -2,31 +2,36 @@
 
 <img src="https://miro.medium.com/max/875/1*7bnLKsChXq94QjtAiRn40w.png">
 
-This Project is thorugh application of machine learning with python programming.
-It focuses on IRIS flower classification using Machine Learning with scikit tools. 
+
+## Introduction
+This project aims to classify Iris flowers into different species based on their sepal and petal attributes. The Iris flower dataset is a popular dataset in machine learning and is often used for educational purposes. In this project, we use the dataset to train a classification model and make predictions on new unseen data.
+
+## Table of Contents
+- [Dataset](#dataset)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
+
+## Dataset
+The Iris flower dataset contains measurements of four attributes of Iris flowers: sepal length, sepal width, petal length, and petal width. Along with the attributes, the dataset also provides the corresponding species of each Iris flower sample. The dataset consists of 150 samples, with 50 samples for each of the three Iris species: setosa, versicolor, and virginica.
 
 
-Here some of algorithm are used that are some types of machine learning subparts algorithms of supervised and Unsupervised learning.
-Algorithm used for predicting and get accuracy are -
+## Usage
+To use this code, follow these steps:
+1. Ensure that the dataset file is available in the same directory as the code file.
+2. Import the required libraries:
+   - [pandas](https://pandas.pydata.org/): A powerful data manipulation library for data analysis.
+   - [numpy](https://numpy.org/): A library for numerical operations in Python.
+   - [seaborn](https://seaborn.pydata.org/): A data visualization library based on matplotlib.
+   - [matplotlib](https://matplotlib.org/): A plotting library for creating visualizations in Python.
+3. Load the dataset into a pandas DataFrame.
+4. Explore the dataset by examining the attributes, summary statistics, and visualizations.
+5. Preprocess the data if necessary. This step may involve handling missing values, feature scaling, or encoding categorical variables.
+6. Split the dataset into training and testing sets.
+7. Train a classification model on the training data.
+8. Evaluate the model's performance on the testing data.
+9. Make predictions on new unseen data.
 
-	Decision tree classifier:
-The decision tree classifier is a supervised learning algorithm that builds a tree-like model to make predictions based on a set of features. The algorithm works by recursively splitting the data into subsets based on the value of a single feature until a stopping criterion is met, such as reaching a maximum depth or a minimum number of samples in a leaf node. The decision tree algorithm uses a measure of impurity, such as Gini impurity or entropy, to determine the best feature to split the data at each node.
+Feel free to modify the code according to your specific requirements and experiment with different classification models to improve the results.
 
-	K nearest neighbor classifier:
-The k-nearest neighbor classifier is a simple supervised learning algorithm that works by finding the k-nearest neighbors in the training set to a given query point and classifying the query point based on the majority class of its k-nearest neighbors. The algorithm uses a distance metric, such as Euclidean or Manhattan distance, to measure the similarity between the query point and the training data.
-
-	Support vector machine (SVM):
-SVM is a supervised learning algorithm that can be used for classification or regression tasks. SVM finds the optimal hyperplane that separates two classes by maximizing the margin, which is the distance between the hyperplane and the closest points from each class. SVM can also handle non-linearly separable data by using kernel functions to map the data to a higher-dimensional space where the data can be separated by a linear hyperplane.
-
-	Logistic Regression:
-Logistic regression is a classification algorithm that predicts the probability of a binary or multi-class outcome based on a set of features. The algorithm models the relationship between the features and the probability of a given outcome using a logistic function. The logistic regression algorithm uses maximum likelihood estimation to estimate the model parameters.
-
-	Metrics:
-Metrics are used to evaluate the performance of a machine learning algorithm. Common classification metrics include accuracy, precision, recall, F1 score, and ROC-AUC score. These metrics can be used to compare the performance of different algorithms or to optimize the hyperparameters of a given algorithm.
-
-	Train_test_split:
-Train_test_split is a function in Python's sci-kit-learn library that splits a dataset into training and testing sets. The function randomly selects a subset of the data for training and the remaining data for testing. The purpose of the function is to evaluate the performance of a machine learning algorithm on unseen data and to prevent overfitting.
-
-
-
-We are making accuracy and prediction in Iris project through Iris Dataset.
+## Acknowledgments
+- The Iris flower dataset used in this project is available at [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris).
